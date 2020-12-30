@@ -9,7 +9,7 @@ class ProgressBar:
         percent = float(self.value) / float(self.maximum)
         fill = int(percent * self.length)
         empty = self.length - fill
-        return (self.fill * fill) + (self.empty * empty) + " " + str(int(percent*100)) + "%"
+        return (self.fill * fill) + (self.empty * empty) + " " + str(int(percent*100)).rjust(3) + "%"
     def set(self, value):
         self.value = value
         if self.value > self.maximum:
