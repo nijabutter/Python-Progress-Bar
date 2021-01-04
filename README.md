@@ -4,7 +4,7 @@
 
 ### Usage
 
-`ProgressBar(value=0, maximum=100, length=25, empty='░', fill='█')`
+`ProgressBar(value=0, maximum=100, length=25, empty='░', fill='█', border=("", "")`
 
 Use the `.set()` method to ensure the value does not exceed the maximum, otherwise set `.value`.
 
